@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct urlCatApp: App {
+    @State
+    var toggleState:Bool = true
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        
+        MenuBarExtra("Utility App", systemImage: "sparkle.text.clipboard") {
+               MenubarView()
         }
     }
 }

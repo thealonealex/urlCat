@@ -1,0 +1,15 @@
+{
+  "originHash" : "7f209c4f01063481c1d23d3c18db2af0e46e838bdfbfa8d190e9b5a41197018d",
+  "pins" : [
+    {
+      "identity" : "onpasteboardchange",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kyle-n/OnPasteboardChange",
+      "state" : {
+        "branch" : "main",
+        "revision" : "56da3a9f6be340698f4516b25dda09cff952214a"
+      }
+    }
+  ],
+  "version" : 3
+}

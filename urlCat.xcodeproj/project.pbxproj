@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA92169A304F40C500300B2A /* OnPasteboardChange in Frameworks */ = {isa = PBXBuildFile; productRef = FA921699304F40C500300B2A /* OnPasteboardChange */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FA68AF82304EDC2700B1F2CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -51,6 +55,7 @@
 		FA68AF71304EDC2600B1F2CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				FA92169A304F40C500300B2A /* OnPasteboardChange in Frameworks */,
 			);
 		};
 		FA68AF7E304EDC2700B1F2CC /* Frameworks */ = {
@@ -103,6 +108,9 @@
 				FA68AF76304EDC2600B1F2CC /* urlCat */,
 			);
 			name = urlCat;
+			packageProductDependencies = (
+				FA921699304F40C500300B2A /* OnPasteboardChange */,
+			);
 			productName = urlCat;
 			productReference = FA68AF74304EDC2600B1F2CC /* urlCat.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +189,9 @@
 			);
 			mainGroup = FA68AF6B304EDC2600B1F2CC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA921698304F40C500300B2A /* XCRemoteSwiftPackageReference "OnPasteboardChange" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FA68AF75304EDC2600B1F2CC /* Products */;
 			projectDirPath = "";
@@ -377,12 +388,14 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "0.1-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -409,12 +422,14 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = "0.1-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -543,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA921698304F40C500300B2A /* XCRemoteSwiftPackageReference "OnPasteboardChange" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyle-n/OnPasteboardChange";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA921699304F40C500300B2A /* OnPasteboardChange */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA921698304F40C500300B2A /* XCRemoteSwiftPackageReference "OnPasteboardChange" */;
+			productName = OnPasteboardChange;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA68AF6C304EDC2600B1F2CC /* Project object */;
 	validationLevel = 1;
