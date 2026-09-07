@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		FA68AF82304EDC2700B1F2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA68AF6C304EDC2600B1F2CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA68AF73304EDC2600B1F2CC;
+			remoteInfo = urlCat;
+		};
+		FA68AF8C304EDC2700B1F2CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA68AF6C304EDC2600B1F2CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA68AF73304EDC2600B1F2CC;
+			remoteInfo = urlCat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA68AF74304EDC2600B1F2CC /* urlCat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = urlCat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA68AF81304EDC2700B1F2CC /* urlCatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = urlCatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA68AF8B304EDC2700B1F2CC /* urlCatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = urlCatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA68AF76304EDC2600B1F2CC /* urlCat */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = urlCat;
+			sourceTree = "<group>";
+		};
+		FA68AF84304EDC2700B1F2CC /* urlCatTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = urlCatTests;
+			sourceTree = "<group>";
+		};
+		FA68AF8E304EDC2700B1F2CC /* urlCatUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = urlCatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA68AF71304EDC2600B1F2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		FA68AF7E304EDC2700B1F2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		FA68AF88304EDC2700B1F2CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA68AF6B304EDC2600B1F2CC = {
+			isa = PBXGroup;
+			children = (
+				FA68AF76304EDC2600B1F2CC /* urlCat */,
+				FA68AF84304EDC2700B1F2CC /* urlCatTests */,
+				FA68AF8E304EDC2700B1F2CC /* urlCatUITests */,
+				FA68AF75304EDC2600B1F2CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA68AF75304EDC2600B1F2CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA68AF74304EDC2600B1F2CC /* urlCat.app */,
+				FA68AF81304EDC2700B1F2CC /* urlCatTests.xctest */,
+				FA68AF8B304EDC2700B1F2CC /* urlCatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA68AF73304EDC2600B1F2CC /* urlCat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA68AF93304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCat" */;
+			buildPhases = (
+				FA68AF70304EDC2600B1F2CC /* Sources */,
+				FA68AF71304EDC2600B1F2CC /* Frameworks */,
+				FA68AF72304EDC2600B1F2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA68AF76304EDC2600B1F2CC /* urlCat */,
+			);
+			name = urlCat;
+			productName = urlCat;
+			productReference = FA68AF74304EDC2600B1F2CC /* urlCat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA68AF80304EDC2700B1F2CC /* urlCatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA68AF96304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCatTests" */;
+			buildPhases = (
+				FA68AF7D304EDC2700B1F2CC /* Sources */,
+				FA68AF7E304EDC2700B1F2CC /* Frameworks */,
+				FA68AF7F304EDC2700B1F2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA68AF83304EDC2700B1F2CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA68AF84304EDC2700B1F2CC /* urlCatTests */,
+			);
+			name = urlCatTests;
+			productName = urlCatTests;
+			productReference = FA68AF81304EDC2700B1F2CC /* urlCatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA68AF8A304EDC2700B1F2CC /* urlCatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA68AF99304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCatUITests" */;
+			buildPhases = (
+				FA68AF87304EDC2700B1F2CC /* Sources */,
+				FA68AF88304EDC2700B1F2CC /* Frameworks */,
+				FA68AF89304EDC2700B1F2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA68AF8D304EDC2700B1F2CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA68AF8E304EDC2700B1F2CC /* urlCatUITests */,
+			);
+			name = urlCatUITests;
+			productName = urlCatUITests;
+			productReference = FA68AF8B304EDC2700B1F2CC /* urlCatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA68AF6C304EDC2600B1F2CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					FA68AF73304EDC2600B1F2CC = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					FA68AF80304EDC2700B1F2CC = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = FA68AF73304EDC2600B1F2CC;
+					};
+					FA68AF8A304EDC2700B1F2CC = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = FA68AF73304EDC2600B1F2CC;
+					};
+				};
+			};
+			buildConfigurationList = FA68AF6F304EDC2600B1F2CC /* Build configuration list for PBXProject "urlCat" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA68AF6B304EDC2600B1F2CC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FA68AF75304EDC2600B1F2CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA68AF73304EDC2600B1F2CC /* urlCat */,
+				FA68AF80304EDC2700B1F2CC /* urlCatTests */,
+				FA68AF8A304EDC2700B1F2CC /* urlCatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA68AF72304EDC2600B1F2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		FA68AF7F304EDC2700B1F2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		FA68AF89304EDC2700B1F2CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA68AF70304EDC2600B1F2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		FA68AF7D304EDC2700B1F2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		FA68AF87304EDC2700B1F2CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA68AF83304EDC2700B1F2CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA68AF73304EDC2600B1F2CC /* urlCat */;
+			targetProxy = FA68AF82304EDC2700B1F2CC /* PBXContainerItemProxy */;
+		};
+		FA68AF8D304EDC2700B1F2CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA68AF73304EDC2600B1F2CC /* urlCat */;
+			targetProxy = FA68AF8C304EDC2700B1F2CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA68AF91304EDC2700B1F2CC /* Debug configuration for PBXProject "urlCat" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA68AF92304EDC2700B1F2CC /* Release configuration for PBXProject "urlCat" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FA68AF94304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCat" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA68AF95304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCat" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FA68AF97304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCatTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/urlCat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/urlCat";
+			};
+			name = Debug;
+		};
+		FA68AF98304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCatTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/urlCat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/urlCat";
+			};
+			name = Release;
+		};
+		FA68AF9A304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCatUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = urlCat;
+			};
+			name = Debug;
+		};
+		FA68AF9B304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCatUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 75AGNZS6G2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = urlCat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA68AF6F304EDC2600B1F2CC /* Build configuration list for PBXProject "urlCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA68AF91304EDC2700B1F2CC /* Debug configuration for PBXProject "urlCat" */,
+				FA68AF92304EDC2700B1F2CC /* Release configuration for PBXProject "urlCat" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		FA68AF93304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA68AF94304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCat" */,
+				FA68AF95304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCat" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		FA68AF96304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA68AF97304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCatTests" */,
+				FA68AF98304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCatTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		FA68AF99304EDC2700B1F2CC /* Build configuration list for PBXNativeTarget "urlCatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA68AF9A304EDC2700B1F2CC /* Debug configuration for PBXNativeTarget "urlCatUITests" */,
+				FA68AF9B304EDC2700B1F2CC /* Release configuration for PBXNativeTarget "urlCatUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA68AF6C304EDC2600B1F2CC /* Project object */;
+	validationLevel = 1;
+}
