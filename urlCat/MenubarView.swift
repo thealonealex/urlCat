@@ -18,7 +18,7 @@ struct MenubarView: View {
                 toggleState.toggle()
             }
             Divider()
-            Text("Version \(appVersion ?? "beta")")
+            Text("Version \(appVersion ?? "unknown")")
                 .font(.subheadline)
             Button("Show Settings"){
                 //code
@@ -28,8 +28,11 @@ struct MenubarView: View {
                 //code
             }.keyboardShortcut("Q", modifiers: .command)
         }.onPasteboardChange {
-            print(pasteboard.string(forType: .string) ?? "empty")
-            //code to clean the pasteboard content
+            let lastClipboardItem:String? = pasteboard.string(forType: .string)
+            print(lastClipboardItem ?? "empty")
+            BarNotificationCenter.shared.show(popupText: "Copied url", popupSymbol: "document.on.clipboard")
+            //TODO: code to clean the pasteboard content
+            //you cannot seem to be able to remove stuff from the system clipboard, so we'll have to append new objects instead
         }
         .padding()
     }
