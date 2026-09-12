@@ -9,13 +9,14 @@ import SwiftUI
 import OnPasteboardChange
 
 struct MenubarView: View {
-    @State var toggleState:Bool = true
+    @State var cleaningEnabled:Bool = true
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     let pasteboard = NSPasteboard.general
+    let cleanList:[String] = ["si", "stkn", "utm_source"]
     var body: some View {
         VStack {
-            Button(toggleState ? "Disable url cleaning" : "Enable url cleaning"){
-                toggleState.toggle()
+            Button(cleaningEnabled ? "Disable url cleaning" : "Enable url cleaning"){
+                cleaningEnabled.toggle()
             }
             Divider()
             Text("Version \(appVersion ?? "unknown")")
@@ -25,14 +26,23 @@ struct MenubarView: View {
             }.keyboardShortcut(",", modifiers: .command)
             Divider()
             Button("Quit urlCat"){
-                //code
+                NSApp.terminate("urlCat")
             }.keyboardShortcut("Q", modifiers: .command)
         }.onPasteboardChange {
-            let lastClipboardItem:String? = pasteboard.string(forType: .string)
-            print(lastClipboardItem ?? "empty")
-            BarNotificationCenter.shared.show(popupText: "Copied url", popupSymbol: "document.on.clipboard")
-            //TODO: code to clean the pasteboard content
-            //you cannot seem to be able to remove stuff from the system clipboard, so we'll have to append new objects instead
+            if cleaningEnabled{
+                let lastClipboardItem:String? = pasteboard.string(forType: .string)
+                let clipboardItem = lastClipboardItem ?? "empty"
+                print(clipboardItem)
+                let cleanedClipboard = clipboardItem.clean(cleanList: cleanList)
+                //TODO: code to clean the pasteboard content
+                //you cannot seem to be able to remove stuff from the system clipboard, so we'll have to append new objects instead
+                if cleanedClipboard != clipboardItem && clipboardItem.starts(with: "http"){
+                    print(cleanedClipboard)
+                    pasteboard.clearContents()
+                    pasteboard.writeObjects([NSString(string: cleanedClipboard)])
+                    BarNotificationCenter.shared.show(popupText: "Cleaned link", popupSymbol: "bubbles.and.sparkles.fill")
+                }
+            }
         }
         .padding()
     }

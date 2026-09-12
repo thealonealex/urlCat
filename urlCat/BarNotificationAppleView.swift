@@ -20,6 +20,7 @@ struct BarNotificationAppleView: View {
         HStack{
             Image(systemName: popupSymbol)
                 .font(.title3)
+                .contentTransition(.symbolEffect(.replace))
             Text(popupText)
         }
         .frame(maxWidth: 300)
@@ -46,7 +47,7 @@ struct BarNotificationAppleView: View {
 }
 
 #Preview{
-    var text = "Example"
-    var symbol = "bubbles.and.sparkles.fill"
+    let text = "Example"
+    let symbol = "bubbles.and.sparkles.fill"
     BarNotificationAppleView(popupText: text, popupSymbol: symbol)
 }
