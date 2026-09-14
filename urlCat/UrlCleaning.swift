@@ -45,4 +45,38 @@ extension String{
         }
         return finalLink
     }
+    
+    func fixEmbed(replaceList:[String: String]) -> String{
+        var originalLink = self
+        if originalLink.starts(with: "https://www."){
+            originalLink.removeFirst(12)
+            let furtherSplitLink = originalLink.split(separator: "/")
+            let domain = String(furtherSplitLink[0])
+            let fixedDomain:String = replaceList[domain] ?? domain
+            
+            //combine into one url and return
+            var finalLink:String = "https://www."
+            finalLink += fixedDomain
+            for i in 0...(furtherSplitLink.count - 2){
+                finalLink += "/\(furtherSplitLink[i+1])"
+            }
+            return finalLink
+        } else if originalLink.starts(with: "https://"){
+            originalLink.removeFirst(8)
+            let furtherSplitLink = originalLink.split(separator: "/")
+            let domain = String(furtherSplitLink[0])
+            let fixedDomain:String = replaceList[domain] ?? domain
+            
+            //combine into one url and return
+            var finalLink:String = "https://"
+            finalLink += fixedDomain
+            if furtherSplitLink.count - 2 >= 0{
+                for i in 0...(furtherSplitLink.count - 2){
+                    finalLink += "/\(furtherSplitLink[i+1])"
+                }
+            }
+            return finalLink
+        }
+        return originalLink
+    }
 }

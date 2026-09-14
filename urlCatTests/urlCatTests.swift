@@ -33,4 +33,18 @@ struct urlCatTests {
         var cleanLink = await link.clean(cleanList: argumentsToRemove)
         #expect(cleanLink == "https://www.instagram.com/reel/DXNsmEXjWdk/?stkn=NTc4MTIwNjQ2YQ==")
     }
+    
+    @Test func fixUpX() async throws {
+        let replaceList:[String:String] = ["x.com": "ililx.com"]
+        let link:String = "https://x.com/backapost"
+        var fixedEmbed = await link.fixEmbed(replaceList: replaceList)
+        #expect(fixedEmbed == "https://ililx.com/backapost")
+    }
+    
+    @Test func fixUpXwithWWW() async throws {
+        let replaceList:[String:String] = ["x.com": "ililx.com"]
+        let link:String = "https://www.x.com/backapost"
+        var fixedEmbed = await link.fixEmbed(replaceList: replaceList)
+        #expect(fixedEmbed == "https://www.ililx.com/backapost")
+    }
 }

@@ -13,6 +13,9 @@ struct MenubarView: View {
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     let pasteboard = NSPasteboard.general
     let cleanList:[String] = ["si", "stkn", "utm_source"]
+    let fixList:[String:String] = ["x.com":"ililx.com",
+                                   "bsky.app":"fxbsky.app",
+                                   "twitter.com": "ililx.com"]
     var body: some View {
         VStack {
             Button(cleaningEnabled ? "Disable url cleaning" : "Enable url cleaning"){
@@ -33,7 +36,8 @@ struct MenubarView: View {
                 let lastClipboardItem:String? = pasteboard.string(forType: .string)
                 let clipboardItem = lastClipboardItem ?? "empty"
                 print(clipboardItem)
-                let cleanedClipboard = clipboardItem.clean(cleanList: cleanList)
+                var cleanedClipboard = clipboardItem.clean(cleanList: cleanList)
+                cleanedClipboard = cleanedClipboard.fixEmbed(replaceList: fixList)
                 //TODO: code to clean the pasteboard content
                 //you cannot seem to be able to remove stuff from the system clipboard, so we'll have to append new objects instead
                 if cleanedClipboard != clipboardItem && clipboardItem.starts(with: "http"){
