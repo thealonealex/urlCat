@@ -16,5 +16,8 @@ struct urlCatApp: App {
         MenuBarExtra("Utility App", systemImage: "sparkle.text.clipboard") {
                MenubarView()
         }
+        Settings{
+            SettingsView()
+        }
     }
 }

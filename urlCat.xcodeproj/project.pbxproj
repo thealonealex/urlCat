@@ -394,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = "0.1-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +428,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
 				MARKETING_VERSION = "0.1-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = samalex22.urlCat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

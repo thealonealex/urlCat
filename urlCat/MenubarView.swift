@@ -9,6 +9,7 @@ import SwiftUI
 import OnPasteboardChange
 
 struct MenubarView: View {
+    @Environment(\.openSettings) private var openSettings
     @State var cleaningEnabled:Bool = true
     let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
     let pasteboard = NSPasteboard.general
@@ -25,7 +26,9 @@ struct MenubarView: View {
             Text("Version \(appVersion ?? "unknown")")
                 .font(.subheadline)
             Button("Show Settings"){
-                //code
+                openSettings()
+                //focus the settings window
+                NSApp.activate(ignoringOtherApps: true)
             }.keyboardShortcut(",", modifiers: .command)
             Divider()
             Button("Quit urlCat"){
